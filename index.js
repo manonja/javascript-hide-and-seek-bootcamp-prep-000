@@ -18,11 +18,13 @@ function increaseRankBy(n){
 }
 
 function deepestChild(){
-  let deepest;
-  // Access all the divs in grand-node
-  const deepDiv = document.querySelectorAll('div#grand-node div');
-  // Find div.innerHTML === 'Boo'
-  for (let i = 0; i < deepDiv.length; i++){
-    const findDeepest = document.querySelectorAll('div');
+  let nodeToFind = document.querySelector('#grand-node');
+  let nodeToCheck = nodeToFind.children[0]
+  // While nodeToCheck isn't empty
+  while (nodeToCheck){
+    // iterates over enqueue and dequeue what we need to check
+    nodeToFind = nodeToCheck
+    nodeToCheck = nodeToFind.children[0]
   }
+  return nodeToFind
 }
