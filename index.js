@@ -18,7 +18,11 @@ function increaseRankBy(n){
 }
 
 function deepestChild(){
+  let deepest;
   // Access all the divs in grand-node
   const deepDiv = document.querySelectorAll('div#grand-node div');
   // Find div.innerHTML === 'Boo'
+  for (let i = 0; i < deepDiv.length; i++){
+    deepest = 
+  }
 }
