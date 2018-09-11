@@ -23,6 +23,6 @@ function deepestChild(){
   const deepDiv = document.querySelectorAll('div#grand-node div');
   // Find div.innerHTML === 'Boo'
   for (let i = 0; i < deepDiv.length; i++){
-    
+    const findDeepest = document.querySelectorAll('div');
   }
 }
