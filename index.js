@@ -22,7 +22,8 @@ function deepestChild(){
   let nodeToCheck = nodeToFind.children[0]
   // While nodeToCheck isn't empty
   while (nodeToCheck){
-    // iterates over enqueue and dequeue what we need to check
+    // iterates over every nodeToCheck and replace it by     nodeToFind (enqueue and dequeue what we need to check) 
+      Stop when there is no nodeToCheck anymore 
     nodeToFind = nodeToCheck
     nodeToCheck = nodeToFind.children[0]
   }
