@@ -18,7 +18,7 @@ function increaseRankBy(n){
 }
 
 function deepestChild(){
-  // Access 
+  // Access all the divs in grand-node
   const deepDiv = document.querySelectorAll('div#grand-node div');
-  
+  // Find div.innerHTML === 'Boo'
 }
